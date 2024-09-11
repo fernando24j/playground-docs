@@ -11,6 +11,9 @@ importers:
       docx-templates:
         specifier: ^4.13.0
         version: 4.13.0
+      easy-template-x-extension-html:
+        specifier: ^0.0.4
+        version: 0.0.4
       isomorphic-fetch:
         specifier: ^3.0.0
         version: 3.0.0
@@ -20,12 +23,22 @@ importers:
 
 packages:
 
+  '@xmldom/xmldom@0.8.7':
+    resolution: {integrity: sha512-sI1Ly2cODlWStkINzqGrZ8K6n+MTSbAeQnAipGyL+KZCXuHaRlj2gyyy8B/9MvsFFqN7XHryQnB2QwhzvJXovg==}
+    engines: {node: '>=10.0.0'}
+
   core-util-is@1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
 
   docx-templates@4.13.0:
     resolution: {integrity: sha512-tTmR3WhROYctuyVReQ+PfCU3zprmC45/VuSVzn8EjovzpRkXYUdXiDatB9M8pasj0V+wuuOyY8bcSHvlQ2GNag==}
     engines: {node: '>=6'}
+
+  easy-template-x-extension-html@0.0.4:
+    resolution: {integrity: sha512-qGCBgpOjux+NBjsFjs70Q5Qde96spApEtugQeFmIqQF2WJAP9MbhCNukjqzeZmpx3I3C3bXW+r1UuISuTHbHkQ==}
+
+  easy-template-x@3.2.1:
+    resolution: {integrity: sha512-uB1R9qYB57HXDpzSS0FKwdgKZIs4iTqHcieSteDSKtz6R+mbaxhxsFdR7YhwvHR+u3VCxC2EpTKEnQh/DNdCfQ==}
 
   immediate@3.0.6:
     resolution: {integrity: sha512-XXOFtyqDjNDAQxVfYxuF7g9Il/IbWmmlQg2MYKOH8ExIT1qg6xc4zyS3HaEEATgs1btfzxq15ciUiY7gjSXRGQ==}
@@ -44,6 +57,9 @@ packages:
 
   lie@3.3.0:
     resolution: {integrity: sha512-UaiMJzeWRlEujzAuw5LokY1L5ecNQYZKfmyZ9L7wDHb/p5etKaxXhohBcrw0EYby+G/NA52vRSN4N39dxHAIwQ==}
+
+  lodash.get@4.4.2:
+    resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
 
   node-fetch@2.7.0:
     resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
@@ -95,12 +111,24 @@ packages:
 
 snapshots:
 
+  '@xmldom/xmldom@0.8.7': {}
+
   core-util-is@1.0.3: {}
 
   docx-templates@4.13.0:
     dependencies:
       jszip: 3.10.1
       sax: 1.3.0
+
+  easy-template-x-extension-html@0.0.4:
+    dependencies:
+      easy-template-x: 3.2.1
+
+  easy-template-x@3.2.1:
+    dependencies:
+      '@xmldom/xmldom': 0.8.7
+      jszip: 3.10.1
+      lodash.get: 4.4.2
 
   immediate@3.0.6: {}
 
@@ -125,6 +153,8 @@ snapshots:
   lie@3.3.0:
     dependencies:
       immediate: 3.0.6
+
+  lodash.get@4.4.2: {}
 
   node-fetch@2.7.0:
     dependencies:
