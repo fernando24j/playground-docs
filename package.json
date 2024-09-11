@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node . swapi-simple.docx output.docx"
+    "start": "node . swapi-simple.docx output.docx",
+    "easy": "node easy.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "docx-templates": "^4.13.0",
+    "easy-template-x-extension-html": "^0.0.4",
     "isomorphic-fetch": "^3.0.0",
     "yaqrcode": "^0.2.1"
   }
