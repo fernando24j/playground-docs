@@ -1,0 +1,17 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node . swapi-simple.docx output.docx"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "docx-templates": "^4.13.0",
+    "isomorphic-fetch": "^3.0.0",
+    "yaqrcode": "^0.2.1"
+  }
+}
